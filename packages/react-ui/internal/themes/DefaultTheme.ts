@@ -755,9 +755,7 @@ export class DefaultTheme {
   public static get hintFontSize() {
     return this.fontSizeSmall;
   }
-  public static get hintLineHeight() {
-    return this.controlLineHeightSmall;
-  }
+  public static hintLineHeight = 'initial';
   public static hintMaxWidth = '200px';
   public static hintPaddingY = '6px';
   public static hintPaddingX = '8px';

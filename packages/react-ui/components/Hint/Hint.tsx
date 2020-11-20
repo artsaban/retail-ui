@@ -69,7 +69,6 @@ export class Hint extends React.Component<HintProps, HintState> {
     pos: 'top',
     manual: false,
     opened: false,
-    maxWidth: 200,
     disableAnimations: isTestEnv,
     useWrapper: true,
   };

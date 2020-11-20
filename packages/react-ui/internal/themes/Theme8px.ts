@@ -460,6 +460,9 @@ export class Theme8px extends (class {} as typeof DefaultThemeInternal) {
   public static hintBorderRadius = '2px';
   public static hintPinOffset = '16px';
   public static hintMargin = '2px';
+  public static get hintLineHeight() {
+    return this.controlLineHeightSmall;
+  }
   //#endregion
 }
 
