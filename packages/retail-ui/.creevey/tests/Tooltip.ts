@@ -458,7 +458,7 @@ describe('Tooltip', function() {
       const element = await this.browser.findElement(By.css('#test-element'));
       await this.browser
         .actions({ bridge: true })
-        .click(this.browser.findElement(By.css('[data-comp-name~="Button"]')))
+        .click(this.browser.findElement(By.css('button')))
         .perform();
       await expect(await element.takeScreenshot()).to.matchImage('render in available position');
     });
@@ -466,15 +466,15 @@ describe('Tooltip', function() {
       const element = await this.browser.findElement(By.css('#test-element'));
       await this.browser
         .actions({ bridge: true })
-        .click(this.browser.findElement(By.css('[data-comp-name~="Button"]')))
+        .click(this.browser.findElement(By.css('button')))
         .perform();
       await this.browser
         .actions({ bridge: true })
-        .click(this.browser.findElement(By.css('[data-comp-name~="Button"]')))
+        .click(this.browser.findElement(By.css('button')))
         .perform();
       await this.browser
         .actions({ bridge: true })
-        .click(this.browser.findElement(By.css('[data-comp-name~="Button"]')))
+        .click(this.browser.findElement(By.css('button')))
         .perform();
       await expect(await element.takeScreenshot()).to.matchImage('relocate on new available position');
     });
