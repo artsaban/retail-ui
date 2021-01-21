@@ -27,7 +27,7 @@ const config: CreeveyConfig = {
     chrome: {
       browserName: 'chrome',
       viewport: { width: 1024, height: 720 },
-      limit: 2,
+      limit: 8,
       platformName: 'linux',
     },
     chromeFlat: {
