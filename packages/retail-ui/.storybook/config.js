@@ -18,7 +18,3 @@ if (process.env.STORYBOOK_FLAT_UI) {
 }
 
 configure(require.context('../components', true, /.stories.tsx?$/), module);
-
-if (process.env.enableReactTesting) {
-  require('../lib/styles/HoldSelectionColor');
-}
