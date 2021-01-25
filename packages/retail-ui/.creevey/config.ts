@@ -27,7 +27,6 @@ const config: CreeveyConfig = {
     chrome: {
       browserName: 'chrome',
       viewport: { width: 1024, height: 720 },
-      limit: 8,
       platformName: 'linux',
     },
     chromeFlat: {
@@ -50,7 +49,6 @@ const config: CreeveyConfig = {
     ie11: {
       browserName: 'internet explorer',
       viewport: { width: 1024, height: 720 },
-      limit: 2,
       // NOTE Enable after switch new separate pool for IE to allow test hover
       // 'se:ieOptions': {
       //   enablePersistentHover: true,
